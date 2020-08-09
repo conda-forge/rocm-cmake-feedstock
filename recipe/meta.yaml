@@ -1,5 +1,5 @@
 {% set name = "rocm-cmake" %}
-{% set version = "2.9.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/RadeonOpenCompute/rocm-cmake/archive/roc-{{ version }}.tar.gz
-  sha256: c114f135593919ed7edce1b192ec4f66447815ca1f5e098bd5d210c006ab2cf1
+  sha256: e520857afe16648394f51308ff3446791568b7b268756bb14cf1d285391f4560
 
 build:
   number: 0
-  skip: True  # [not linux]
+  skip: true  # [not linux]
 
 requirements:
   build:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Rocm cmake modules'
+  summary: Rocm cmake modules
 
 extra:
   recipe-maintainers:
