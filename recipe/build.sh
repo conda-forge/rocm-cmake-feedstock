@@ -3,5 +3,5 @@
 mkdir -p build
 cd build
 
-cmake -DCMAKE_INSTALL_PREFIX=$PREFIX ..
+cmake ${CMAKE_ARGS} ..
 make install
