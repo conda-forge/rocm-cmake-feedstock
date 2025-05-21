@@ -1,5 +1,5 @@
 {% set name = "rocm-cmake" %}
-{% set version = "6.4.0" %}
+{% set version = "6.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ROCm/rocm-cmake/archive/refs/tags/rocm-{{ version }}.tar.gz
-  sha256: be8109c52e9309d1ae9553e067346ecdf1a25f653cc21974ddc542f31ce54615
+  sha256: d6dfa862009d593f4d334e0c6da9ac52b228e52bb3b38b53405975f28087ca2f
 
 build:
   number: 0
